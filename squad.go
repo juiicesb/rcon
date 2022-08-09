@@ -3,7 +3,7 @@ package rcon
 import "log"
 
 type Squad struct {
-	conn *Conn
+	conn Conn
 }
 
 func (s *Squad) ShowCurrentMap() {
