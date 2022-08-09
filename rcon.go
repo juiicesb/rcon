@@ -168,6 +168,10 @@ func (c *Conn) Close() error {
 	return c.conn.Close()
 }
 
+func (c *Conn) Squad() Squad {
+	return Squad{}
+}
+
 // auth sends SERVERDATA_AUTH request to the remote server and
 // authenticates client for the next requests.
 func (c *Conn) auth(password string) error {
